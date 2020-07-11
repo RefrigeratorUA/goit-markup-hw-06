@@ -455,7 +455,6 @@ footer .social-icon-link {
   top: 50%;
   left: 50%;
   width: 528px;
-  height: 581px;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
 
@@ -640,6 +639,36 @@ footer .social-icon-link {
   margin-left: 7px;
   margin-right: 4px;
   cursor: pointer;
+}
+.form-callback-checkbox a {
+  color: var(--actual-color-text);
+  text-decoration: underline;
+}
+.form-callback-submit {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  border: none;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--white-index);
+
+  background-color: var(--actual-color-text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background-color 250ms var(--kubik-rubik);
+}
+.form-callback-submit:hover,
+.form-callback-submit:focus {
+  background-color: #188ce8;
 }
 
 /* Portfolio */
