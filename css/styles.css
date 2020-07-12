@@ -417,6 +417,72 @@ footer .social-icon-link {
   fill: var(--white-index);
   background-color: rgba(255, 255, 255, 0.1);
 }
+/* Footer Section  Subscribe*/
+.footer-section-subscribe {
+  margin-top: 72px;
+  margin-left: 108px;
+}
+.footer-section-subscribe h2 {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: var(--letter-spacing-main);
+  line-height: 1.14;
+  color: var(--white-index);
+}
+.form-subscribe {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.form-subscribe-input {
+  width: 358px;
+  padding: 14px 16px;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--footer-bg-color);
+  cursor: pointer;
+
+  transition: border-color 250ms var(--kubik-rubik);
+}
+
+.form-subscribe-input:focus {
+  outline: none;
+  border-color: var(--actual-color-text);
+  cursor: text;
+}
+.form-subscribe-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  padding: 10px 28px;
+  cursor: pointer;
+  background: var(--actual-color-text);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  fill: var(--white-index);
+}
+.form-subscribe-label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-index);
+}
+.form-subscribe-icon {
+  margin-left: 10px;
+}
 
 /* Footer Section Copyright */
 .footer-section-copyright {
@@ -457,8 +523,8 @@ footer .social-icon-link {
   width: 528px;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
-
   background-color: var(--white-index);
+
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -627,6 +693,10 @@ footer .social-icon-link {
 
   transition: border-color 250ms var(--kubik-rubik), background-color 250ms var(--kubik-rubik);
 }
+.form-callback-checkbox--input:focus ~ .form-callback-icon--checkbox {
+  border: 2px solid var(--actual-color-text);
+  border-radius: 2px;
+}
 .form-callback-checkbox--input:checked ~ .form-callback-icon--checkbox {
   border: 2px solid;
   border-color: transparent;
@@ -727,7 +797,6 @@ footer .social-icon-link {
 
 .portfolio-image {
   position: relative;
-  /* overflow: hidden; */
 }
 .portfolio-p {
   position: absolute;
